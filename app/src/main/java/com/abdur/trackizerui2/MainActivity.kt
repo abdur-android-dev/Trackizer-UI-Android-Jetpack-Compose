@@ -52,7 +52,7 @@ fun MyApp() {
     val scaffoldState  = rememberScaffoldState()
     Scaffold(bottomBar = {
         BottomMenu()
-    },
+    }, backgroundColor = Background1,
         floatingActionButton = {
            FloatingActionButton(
                onClick = {  },
