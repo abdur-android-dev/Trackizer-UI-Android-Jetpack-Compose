@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material.FabPosition
 import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -45,12 +44,15 @@ fun MyApp() {
         systemUiController.setSystemBarsColor(
             color = TopBackground
         )
+        systemUiController.setNavigationBarColor(
+            color = Background1
+        )
     }
 
     val scaffoldState  = rememberScaffoldState()
     Scaffold(bottomBar = {
         BottomMenu()
-    }, backgroundColor = Background1,
+    },
         floatingActionButton = {
            FloatingActionButton(
                onClick = {  },

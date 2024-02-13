@@ -1,10 +1,8 @@
 package com.abdur.trackizerui2.ui.screen
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,7 +27,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.booleanResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -37,7 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.abdur.trackizerui2.R
-import com.abdur.trackizerui2.ui.screen.size.GetScreenSize
+import com.abdur.trackizerui2.ui.screen.size.getScreenSize
 import com.abdur.trackizerui2.ui.theme.AvenirBlack
 import com.abdur.trackizerui2.ui.theme.AvenirBook
 import com.abdur.trackizerui2.ui.theme.Background1
@@ -50,10 +47,9 @@ import com.abdur.trackizerui2.ui.theme.TopBackground
 @Preview
 @Composable
 fun TopScreen(){
-    val screenSize = GetScreenSize()
+    val screenSize = getScreenSize()
     //val screenWidth = screenSize.first
     val screenHeight = screenSize.second
-    Log.d("KHAN","Screem Height = $screenHeight")
     Column(
         modifier = Modifier
             .fillMaxWidth()
